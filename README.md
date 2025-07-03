@@ -1,4 +1,4 @@
-# 🌐 Website Lead & Job Scraper
+# 🌐 Website Scraper
 
 This is a web-based scraper built with **Streamlit** that extracts:
 
@@ -7,14 +7,21 @@ This is a web-based scraper built with **Streamlit** that extracts:
 
 from a given company website.
 
+Live App: [https://webscraper-vwbewfdkfzekz2htd7pfwb.streamlit.app/](https://webscraper-vwbewfdkfzekz2htd7pfwb.streamlit.app/)
+
 ---
 
 ## 🚀 Features
 
-* Input any company website URL
-* Automatically finds related contact and careers pages
-* Extracts and displays emails, phone numbers, and job openings
-* Download data as CSV files
+* ✏️ Simple UI to enter company website URLs
+* 🔗 Automatically finds relevant internal links (contact, careers, etc.)
+* 📣 Extracts emails, phone numbers, and page URLs from the website
+* 🔮 Detects and extracts job-related content using keyword heuristics
+* 📚 Identifies job title, experience, and tech stack (e.g., Python, React)
+* 📄 Download extracted contact and job data as CSV files
+* ⏳ Shows loading spinner while scraping is in progress
+* ⚠ Displays warnings if no data is found
+* 🌐 Completely client-side interaction with no data logging
 
 ---
 
@@ -50,7 +57,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running the App
+## ▶️ Running the App Locally
 
 ```bash
 streamlit run app.py
@@ -90,4 +97,4 @@ This tool is intended for educational or internal company use only. Always ensur
 
 ## ✨ Credits
 
-Developed by \[Your Name].
+Developed by Dharmik Sompura \[[dharmiksompura1212@gmail.com](mailto:dharmiksompura1212@gmail.com)].
