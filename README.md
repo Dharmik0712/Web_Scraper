@@ -1,100 +1,92 @@
-# 🌐 Website Scraper
+# 🌐 Lead & Job Web Scraper
 
-This is a web-based scraper built with **Streamlit** that extracts:
-
-* 📞 Contact information (emails & phone numbers)
-* 💼 Job openings (job title, description, experience, and tech stack)
-
-from a given company website.
-
-Live App: [https://webscraper-vwbewfdkfzekz2htd7pfwb.streamlit.app/](https://webscraper-vwbewfdkfzekz2htd7pfwb.streamlit.app/)
+An AI-powered Streamlit application that scrapes company websites to extract key lead contact information (emails, phone numbers) and open job postings. Built as part of the Caprae Capital AI-Readiness Pre-Screening Challenge.
 
 ---
 
-## 🚀 Features
-
-* ✏️ Simple UI to enter company website URLs
-* 🔗 Automatically finds relevant internal links (contact, careers, etc.)
-* 📣 Extracts emails, phone numbers, and page URLs from the website
-* 🔮 Detects and extracts job-related content using keyword heuristics
-* 📚 Identifies job title, experience, and tech stack (e.g., Python, React)
-* 📄 Download extracted contact and job data as CSV files
-* ⏳ Shows loading spinner while scraping is in progress
-* ⚠ Displays warnings if no data is found
-* 🌐 Completely client-side interaction with no data logging
+## 🔗 Live Demo
+**[Click here to try the deployed app](https://webscraper-vwbewfdkfzekz2htd7pfwb.streamlit.app/)**
 
 ---
 
-## 🛠 Tech Stack
-
-* **Frontend**: Streamlit
-* **Backend**: Python, BeautifulSoup, Requests
-* **Libraries**: pandas, fake\_useragent
+## 🧠 Problem Statement
+Caprae Capital empowers post-acquisition businesses through AI transformation. This tool helps automate lead generation by scraping and structuring contact details and job data from corporate websites in just one click.
 
 ---
 
-## 📦 Installation
+## ✨ Features
+- 🔍 Scrape contact pages (email, phone, source links)
+- 💼 Extract structured job postings (title, tech stack, experience)
+- 📥 Download results as CSV (for CRM or sales use)
+- 🧠 Simple, intuitive UI with real-time results
 
-1. **Clone the repo**
+---
 
-```bash
-git clone https://github.com/your-username/web-scraper.git
-cd web-scraper
+## ⚙️ How It Works
+1. Enter a company's base website URL
+2. Click **"Scrape Website"**
+3. App scrapes the main site and important subpages (Contact, About, Careers, etc.)
+4. Data is presented in tables and can be downloaded instantly
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend**: Streamlit
+- **Backend**: Python, BeautifulSoup, Requests
+- **Other Libraries**: `pandas`, `fake_useragent`, `re`, `base64`
+
+---
+
+## 📂 Folder Structure
+```
+├── app.py              # Streamlit frontend logic
+├── scraper.py          # Core scraping logic
+├── utils.py            # Helper functions (regex, download)
+├── requirements.txt    # Python dependencies
 ```
 
-2. **Create a virtual environment (optional but recommended)**
+---
 
+## 🚀 Getting Started (Local Setup)
 ```bash
-python -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
-```
+# 1. Clone the repository
+git clone https://github.com/Dharmik0712/Web_Scraper.git
+cd Web_Scraper
 
-3. **Install dependencies**
-
-```bash
+# 2. Install dependencies
 pip install -r requirements.txt
-```
 
----
-
-## ▶️ Running the App Locally
-
-```bash
+# 3. Run the Streamlit app
 streamlit run app.py
 ```
 
-Then open the provided URL in your browser (usually `http://localhost:8501`).
+---
+
+## 🧪 Example Use Cases
+- Sales prospecting: Find key contact points from a company site
+- Talent intelligence: Analyze job trends and hiring signals
+- BD Scouting: Combine open roles + tech stack for partnership targeting
 
 ---
 
-## 🗉 File Structure
-
-```
-.
-├── app.py            # Main Streamlit app
-├── scraper.py        # Contains web scraping logic
-├── utils.py          # Utility functions (email/phone extraction, download link)
-├── requirements.txt  # Dependencies
-└── README.md         # This file
-```
+## 🧾 License
+MIT License — feel free to fork and build upon it.
 
 ---
 
-## 📄 Output
-
-* Leads data (`leads.csv`)
-* Job openings (`job_openings.csv`)
-
-Each can be downloaded directly through the web app.
+## 🙋‍♂️ Author
+**Dharmik Sompura**  
+For Caprae Capital’s AI-Readiness Internship Challenge  
+[GitHub Profile](https://github.com/Dharmik0712)
 
 ---
 
-## ⚠️ Disclaimer
-
-This tool is intended for educational or internal company use only. Always ensure scraping is allowed on the target website as per their **robots.txt** and **terms of service**.
+## 🧩 Future Improvements
+- LinkedIn and social scraping
+- CAPTCHA bypass
+- CRM integrations (Salesforce/Hubspot)
+- Email validity checks
 
 ---
 
-## ✨ Credits
-
-Developed by Dharmik Sompura \[[dharmiksompura1212@gmail.com](mailto:dharmiksompura1212@gmail.com)].
+> 💬 *“Don’t just extract data—extract insight.”*
